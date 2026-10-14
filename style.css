@@ -1,0 +1,341 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ajusta el logo en el menú */
+.ui.menu .header.item img {
+  height: 40px;
+  width: auto;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+/* Menú responsive: oculta texto largo en pantallas pequeñas */
+@media (max-width: 600px) {
+  .ui.menu .header.item {
+    font-size: 1em;
+    padding: 0.5em 0.7em !important;
+  }
+  .ui.menu .item {
+    font-size: 1em;
+    padding: 0.5em 0.7em !important;
+  }
+}
+
+/* Espaciado entre tarjetas y panel lateral */
+.ui.grid.container {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
+/* Tarjetas principales */
+.ui.cards > .card {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+}
+.ui.cards > .card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.13);
+}
+
+/* Imágenes de las tarjetas */
+.ui.cards .card .image img {
+  object-fit: contain;
+  height: 120px;
+  background: #f8f8f8;
+  border-radius: 8px 8px 0 0;
+  padding: 1em;
+  width: 100%;
+}
+
+/* Panel lateral */
+.ui.segment {
+  border-radius: 12px !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06) !important;
+}
+
+/* Footer */
+.ui.footer.segment {
+  padding: 2em 0 !important;
+  font-size: 1.1em;
+  color: #fff !important;
+  background: #1b1c1d !important;
+  border-radius: 0 !important;
+}
+
+/* Accesos directos */
+.ui.list .item {
+  font-size: 1.1em;
+  padding: 0.5em 0;
+}
+
+/* Responsive: tarjetas y grid */
+@media (max-width: 991px) {
+  .ui.grid.container {
+    flex-direction: column !important;
+  }
+  .ui.grid > .column {
+    width: 100% !important;
+    margin-bottom: 2em;
+  }
+  .ui.cards {
+    flex-direction: column !important;
+  }
+}
+
+/* Responsive: reduce el tamaño de las tarjetas en móviles */
+@media (max-width: 767px) {
+  .ui.cards > .card .image img {
+    height: 80px;
+    padding: 0.5em;
+  }
+  .ui.grid.container {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+  }
+  .ui.cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1em;
+  }
+  .ui.cards > .card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Responsive: footer y textos */
+@media (max-width: 600px) {
+  .ui.footer.segment {
+    font-size: 0.95em;
+    padding: 1em 0 !important;
+  }
+  .ui.header {
+    font-size: 1.2em !important;
+  }
+}
+
+/* Mejora la visualización de listas en panel lateral en móvil */
+@media (max-width: 600px) {
+  .ui.segment .ui.list .item {
+    font-size: 1em;
+    padding: 0.3em 0;
+  }
+}
+
+/* Mejora la visualización de botones y enlaces */
+.ui.button,
+.ui.list .item a {
+  word-break: break-word;
+}
+
+/* Asegura que las imágenes no desborden */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #003366;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 60px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #66ccff;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Productos */
+.productos {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.productos article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.productos article:hover {
+  transform: translateY(-5px);
+}
+
+.productos article img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.productos article h2 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.productos article p {
+  color: #555;
+}
+
+.productos article a {
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.productos article a:hover {
+  text-decoration: underline;
+}
+
+/* Panel Lateral */
+.panel-lateral {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 250px;
+}
+
+.panel-lateral h3 {
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.panel-lateral ul {
+  list-style: none;
+}
+
+.panel-lateral ul li {
+  margin-bottom: 0.8rem;
+}
+
+.panel-lateral ul li a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.panel-lateral ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-top: auto;
+}
+
+/* Personalización del logo en la navbar */
+.navbar-brand img {
+  border-radius: 8px;
+}
+
+/* Sombra suave para las tarjetas */
+.card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Espaciado en la lista de accesos rápidos */
+.list-group-item {
+  background: transparent;
+  border: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Botón principal más ancho en móvil */
+@media (max-width: 576px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+/* Footer fijo en la parte inferior si hay poco contenido */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}

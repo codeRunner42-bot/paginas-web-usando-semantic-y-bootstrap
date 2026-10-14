@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NovaTrust | Iniciar Sesión</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Menú superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imagen/logo-novatrust.png" alt="Logo NovaTrust" width="40" class="me-2" />
+                NovaTrust
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestamos.html">Préstamos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inversiones.html">Inversiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarjetas.html">Tarjetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <!-- Formulario de inicio de sesión -->
+            <div class="col-lg-8 col-xl-8 mb-4">
+                <div class="card shadow p-4">
+                    <h2 class="mb-3">
+                        <i class="bi bi-person-circle"></i>
+                        Iniciar Sesión en tu Cuenta NovaTrust
+                    </h2>
+                    <h6 class="text-muted mb-4">Accede a tu panel de control y gestiona tus productos de forma segura.</h6>
+                    <form action="#" method="POST" style="max-width:400px;margin:auto;">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario o Correo Electrónico</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario" required placeholder="Ingresa tu usuario o correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" name="contrasena" required placeholder="Contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                        <div class="text-center my-3 text-muted">o</div>
+                        <div class="text-center">
+                            <a href="#" class="small">¿Olvidaste tu contraseña?</a> &nbsp;|&nbsp;
+                            <a href="#" class="small">Registrarse</a>
+                        </div>
+                    </form>
+                    <div class="alert alert-secondary text-center mt-4" role="alert">
+                        ¿Aún no tienes una cuenta? <a href="#">Regístrate fácilmente aquí</a>.
+                    </div>
+                </div>
+            </div>
+            <!-- Panel lateral -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Necesitas Ayuda?</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-0 border-0">
+                                <a class="text-decoration-none" href="soporte.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    Centro de Ayuda
+                                </a>
+                            </li>
+                            <li class="list-group-item px-0 border-0">
+                                <a class="text-decoration-none" href="#">
+                                    <i class="bi bi-info-circle"></i>
+                                    Preguntas Frecuentes sobre Acceso
+                                </a>
+                            </li>
+                            <li class="list-group-item px-0 border-0">
+                                <a class="text-decoration-none" href="#">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    Problemas al Iniciar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            NovaTrust S.A.S. © 2025 | contacto@novatrust.com | Bogotá, Colombia
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle (opcional, solo si necesitas componentes interactivos) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Importa Bootstrap en tu HTML:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+*/
+
+/* Estilos Generales */
+body {
+    font-family: var(--bs-font-sans-serif, 'Lato', 'Poppins', Arial, sans-serif);
+    background-color: #e6f0f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6A5ACD;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    max-height: 80px;
+    margin-bottom: 1rem;
+    border-radius: 60%;
+    border: 3px solid #fff;
+}
+
+nav {
+    background-color: #483D8B;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav .nav-link {
+    color: #fff !important;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, border-radius 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+nav .nav-link:hover,
+nav .nav-link:focus {
+    background-color: #7B68EE;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.articles-section {
+    flex: 3;
+    min-width: 600px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.articles-section h2,
+.sidebar h2 {
+    color: #6A5ACD;
+    text-align: center;
+}
+
+.care-article {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.care-article h3 {
+    color: #483D8B;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--bs-primary);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.appointment-form label {
+    font-weight: 500;
+    color: #555;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    margin-bottom: 1rem;
+}
+
+.appointment-form button {
+    background-color: #6A5ACD;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.appointment-form button:hover {
+    background-color: #483D8B;
+}
+
+footer {
+    background: var(--bs-primary);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .articles-section,
+    .sidebar {
+        min-width: unset;
+        width: 100%;
+    }
+}

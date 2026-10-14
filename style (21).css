@@ -1,0 +1,142 @@
+/* Importa Semantic UI en tu HTML:
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+*/
+
+/* Estilos Generales */
+body {
+    font-family: 'Lato', 'Poppins', Arial, sans-serif;
+    background-color: #e6f0f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header.ui.segment {
+    background-color: #6A5ACD !important;
+    color: #fff !important;
+    padding: 2rem 0 !important;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.logo img {
+    max-height: 80px;
+    margin-bottom: 1rem;
+    border-radius: 60%;
+    border: 3px solid #fff;
+}
+
+.ui.menu {
+    background-color: #483D8B !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 0 !important;
+    margin-bottom: 0;
+}
+
+.ui.menu .item {
+    color: #fff !important;
+    border-radius: 0.5rem !important;
+    transition: background-color 0.3s, border-radius 0.3s;
+    padding: 0.5rem 1rem !important;
+}
+
+.ui.menu .item:hover,
+.ui.menu .item:focus {
+    background-color: #7B68EE !important;
+    color: #fff !important;
+}
+
+.main-content.ui.grid {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.articles-section {
+    grid-column: 1 / span 2;
+    min-width: 600px;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.articles-section h2, .sidebar h2 {
+    color: #6A5ACD;
+    text-align: center;
+}
+
+.care-article.ui.segment {
+    background-color: #fff !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+    border: none !important;
+}
+
+.care-article h3 {
+    color: #483D8B;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #2185d0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #1678c2;
+}
+
+/* Estilos de formulario adaptados a Semantic UI */
+.ui.form .field label {
+    font-weight: 500;
+    color: #555;
+}
+
+.ui.form .field input,
+.ui.form .field textarea {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.ui.form button.ui.button {
+    background-color: #6A5ACD !important;
+    color: #fff !important;
+    border-radius: 0.5rem !important;
+    transition: background-color 0.3s;
+}
+
+.ui.form button.ui.button:hover {
+    background-color: #483D8B !important;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #2185d0;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+}

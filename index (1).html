@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caninos y Felinos - Centro Veterinario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Lato', 'Poppins', Arial, sans-serif; }
+        .logo img { max-height: 80px; }
+        .article-image { width: 100%; max-width: 350px; border-radius: 8px; }
+        .read-more { text-decoration: none; color: #0d6efd; }
+        footer { background: #f8f9fa; padding: 1.5rem 0; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-4 mb-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+            <div class="logo">
+                <img src="imagenes/caninos_felinos_logo.png" alt="Logo Caninos y Felinos" class="img-fluid">
+            </div>
+            <div>
+                <h1 class="mb-1">Caninos y Felinos</h1>
+                <p class="mb-0">Tu mejor amigo, en las mejores manos.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guarderia.html">Guardería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tips-y-consejos">Tips y Consejos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#citas-medicas">Agenda tu Cita</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <!-- Main Articles Section -->
+            <section class="col-lg-8 mb-4">
+                <h2 id="tips-y-consejos" class="mb-4">Tips y Consejos para el Cuidado de tus Mascotas</h2>
+                <div class="card mb-4 shadow-sm">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5">
+                            <img src="imagenes/perro_cuidado.jpg" alt="Perro feliz" class="img-fluid rounded-start article-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h3 class="card-title">Cuidado Esencial para Perros: Mantén a tu Mejor Amigo Feliz y Saludable</h3>
+                                <p class="card-text">El bienestar de tu perro es fundamental para una vida plena juntos. Esto incluye una alimentación adecuada, ejercicio regular y visitas periódicas al veterinario. Asegurarte de que tenga un ambiente seguro y estimulante también contribuirá a su felicidad y salud general.</p>
+                                <a href="cuidado_perros.html" class="read-more">Profundizar sobre el cuidado de perros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-5">
+                            <img src="imagenes/gato_cuidado.jpg" alt="Gato descansando" class="img-fluid rounded-start article-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h3 class="card-title">Guía Completa para el Cuidado de Gatos: Salud, Comportamiento y Felicidad</h3>
+                                <p class="card-text">Los gatos son criaturas maravillosas que requieren cuidados específicos. Desde su dieta hasta su enriquecimiento ambiental, cada detalle cuenta para garantizar una vida larga y saludable. Presta atención a las señales de su comportamiento y busca siempre el consejo de un profesional.</p>
+                                <a href="cuidado_gatos.html" class="read-more">Profundizar sobre el cuidado de gatos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Sidebar / Appointment Form -->
+            <aside class="col-lg-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 id="citas-medicas" class="card-title mb-3">Agenda tu Cita Médica</h2>
+                        <form action="mailto:ospajesu@gmail.com?subject=Solicitud%20de%20Cita%20Veterinaria" method="POST" enctype="text/plain" class="appointment-form">
+                            <div class="mb-3">
+                                <label for="pet-name" class="form-label">Nombre de la Mascota:</label>
+                                <input type="text" class="form-control" id="pet-name" name="pet_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="owner-name" class="form-label">Nombre del Dueño:</label>
+                                <input type="text" class="form-control" id="owner-name" name="owner_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Fecha Preferida:</label>
+                                <input type="date" class="form-control" id="date" name="appointment_date" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="time" class="form-label">Hora Preferida:</label>
+                                <input type="time" class="form-control" id="time" name="appointment_time" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reason" class="form-label">Motivo de la Cita:</label>
+                                <textarea id="reason" class="form-control" name="reason" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Solicitar Cita</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Caninos y Felinos. Todos los derechos reservados.</p>
+            <p><strong>Contacto:</strong> Teléfono: 3022880520 | Email: ospajesu@gmail.com</p>
+            <p>Dirección: kra 29 #17-17, Barranquilla, Colombia</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

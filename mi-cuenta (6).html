@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NovaTrust | Iniciar Sesión</title>
+    <!-- Semantic UI CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Menú superior -->
+    <div class="ui menu">
+        <div class="header item">
+            <img src="imagen/logo-novatrust.png" alt="Logo NovaTrust" class="ui small image" style="margin-right: 1em;" />
+            NovaTrust
+        </div>
+        <a class="item" href="index.html">Inicio</a>
+        <a class="item" href="prestamos.html">Préstamos</a>
+        <a class="item" href="inversiones.html">Inversiones</a>
+        <a class="item" href="tarjetas.html">Tarjetas</a>
+        <a class="item" href="soporte.html">Soporte</a>
+    </div>
+
+    <div class="ui grid container" style="margin-top: 2em;">
+        <!-- Formulario de inicio de sesión -->
+        <div class="twelve wide column">
+            <div class="ui raised very padded text segment">
+                <h2 class="ui header">
+                    <i class="user circle icon"></i>
+                    <div class="content">
+                        Iniciar Sesión en tu Cuenta NovaTrust
+                        <div class="sub header">Accede a tu panel de control y gestiona tus productos de forma segura.</div>
+                    </div>
+                </h2>
+                <form class="ui form" action="#" method="POST" style="max-width:400px;margin:auto;">
+                    <div class="field">
+                        <label for="usuario">Usuario o Correo Electrónico</label>
+                        <input type="text" id="usuario" name="usuario" required placeholder="Ingresa tu usuario o correo">
+                    </div>
+                    <div class="field">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="ui primary fluid button">Iniciar Sesión</button>
+                    <div class="ui horizontal divider">o</div>
+                    <div class="ui center aligned">
+                        <a href="#" class="ui small">¿Olvidaste tu contraseña?</a> &nbsp;|&nbsp;
+                        <a href="#" class="ui small">Registrarse</a>
+                    </div>
+                </form>
+                <div class="ui message" style="margin-top:2em;">
+                    ¿Aún no tienes una cuenta? <a href="#">Regístrate fácilmente aquí</a>.
+                </div>
+            </div>
+        </div>
+        <!-- Panel lateral -->
+        <div class="four wide column">
+            <div class="ui segment">
+                <h3 class="ui header">¿Necesitas Ayuda?</h3>
+                <div class="ui list">
+                    <a class="item" href="soporte.html">
+                        <i class="help circle icon"></i>
+                        Centro de Ayuda
+                    </a>
+                    <a class="item" href="#">
+                        <i class="question circle outline icon"></i>
+                        Preguntas Frecuentes sobre Acceso
+                    </a>
+                    <a class="item" href="#">
+                        <i class="exclamation triangle icon"></i>
+                        Problemas al Iniciar Sesión
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="ui inverted vertical footer segment" style="margin-top: 3em;">
+            <div class="ui center aligned container">
+                NovaTrust S.A.S. © 2025 | contacto@novatrust.com | Bogotá, Colombia
+            </div>
+        </div>
+    </footer>
+    <!-- Semantic UI JS (opcional) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script> -->
+</body>
+</html>

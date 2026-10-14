@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caninos y Felinos - Centro Veterinario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: 'Lato', 'Poppins', Arial, sans-serif; }
+        .logo img { max-height: 80px; }
+        .article-image { width: 100%; max-width: 350px; border-radius: 8px; }
+        .read-more { text-decoration: none; color: #2185d0; }
+        footer { background: #f8f9fa; padding: 1.5rem 0; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="ui segment basic" style="padding-bottom: 0;">
+        <div class="ui container stackable grid middle aligned">
+            <div class="four wide column logo">
+                <img src="imagenes/caninos_felinos_logo.png" alt="Logo Caninos y Felinos" class="ui image">
+            </div>
+            <div class="twelve wide column">
+                <h1 class="ui header">Caninos y Felinos</h1>
+                <p>Tu mejor amigo, en las mejores manos.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="ui menu stackable inverted blue">
+        <div class="ui container">
+            <a class="item" href="servicios.html">Servicios</a>
+            <a class="item" href="productos.html">Productos</a>
+            <a class="item" href="guarderia.html">Guardería</a>
+            <a class="item" href="promociones.html">Promociones</a>
+            <a class="item" href="#tips-y-consejos">Tips y Consejos</a>
+            <a class="item" href="#citas-medicas">Agenda tu Cita</a>
+        </div>
+    </div>
+
+    <main class="ui container" style="margin-top:2em;">
+        <div class="ui stackable grid">
+            <section class="ten wide column">
+                <h2 id="tips-y-consejos" class="ui header">Tips y Consejos para el Cuidado de tus Mascotas</h2>
+                <div class="ui card fluid">
+                    <div class="content">
+                        <div class="ui grid">
+                            <div class="six wide column">
+                                <img src="imagenes/perro_cuidado.jpg" alt="Perro feliz" class="ui rounded image article-image">
+                            </div>
+                            <div class="ten wide column">
+                                <h3 class="ui header">Cuidado Esencial para Perros: Mantén a tu Mejor Amigo Feliz y Saludable</h3>
+                                <p>El bienestar de tu perro es fundamental para una vida plena juntos. Esto incluye una alimentación adecuada, ejercicio regular y visitas periódicas al veterinario. Asegurarte de que tenga un ambiente seguro y estimulante también contribuirá a su felicidad y salud general.</p>
+                                <a href="cuidado_perros.html" class="read-more">Profundizar sobre el cuidado de perros</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui card fluid">
+                    <div class="content">
+                        <div class="ui grid">
+                            <div class="six wide column">
+                                <img src="imagenes/gato_cuidado.jpg" alt="Gato descansando" class="ui rounded image article-image">
+                            </div>
+                            <div class="ten wide column">
+                                <h3 class="ui header">Guía Completa para el Cuidado de Gatos: Salud y Bienestar</h3>
+                                <p>A pesar de su independencia, los gatos necesitan atención y cuidados específicos para mantenerse saludables. Desde una nutrición balanceada hasta chequeos veterinarios y un entorno estimulante, cada detalle cuenta para asegurar su bienestar a largo plazo.</p>
+                                <a href="cuidado_gatos.html" class="read-more">Profundizar sobre el cuidado de gatos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="six wide column sidebar">
+                <div class="ui segment">
+                    <h2 id="citas-medicas" class="ui header">Agenda una Cita</h2>
+                    <p>Completa el formulario para solicitar una cita con nuestros veterinarios. Te contactaremos para confirmar la fecha y hora.</p>
+                    <form class="ui form">
+                        <div class="field">
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="full_name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email_address" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone_number">
+                        </div>
+                        <div class="field">
+                            <label for="date">Fecha Preferida:</label>
+                            <input type="date" id="date" name="appointment_date" required>
+                        </div>
+                        <div class="field">
+                            <label for="time">Hora Preferida:</label>
+                            <input type="time" id="time" name="appointment_time" required>
+                        </div>
+                        <div class="field">
+                            <label for="reason">Motivo de la Cita:</label>
+                            <textarea id="reason" name="reason" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="ui primary button fluid">Solicitar Cita</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="ui vertical segment" style="margin-top:2em;">
+        <div class="ui container center aligned">
+            <p>&copy; 2025 Caninos y Felinos. Todos los derechos reservados.</p>
+            <p><strong>Contacto:</strong> Teléfono: 3022880520 | Email: ospajesu@gmail.com</p>
+            <p>Dirección: kra 29 #17-17, Barranquilla, Colombia</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaTrust | Tarjetas</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Menú superior -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imagen/logo-novatrust.png" alt="Logo NovaTrust" width="40" class="me-2"/>
+        NovaTrust
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="prestamos.html">Préstamos</a></li>
+          <li class="nav-item"><a class="nav-link" href="inversiones.html">Inversiones</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="tarjetas.html">Tarjetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+      <!-- Contenido principal de tarjetas -->
+      <div class="col-lg-9 mb-4">
+        <div class="card shadow p-4">
+          <h2 class="mb-4">
+            <i class="bi bi-credit-card-2-front"></i>
+            Tarjetas NovaTrust
+            <small class="text-muted d-block fs-5">Elige la tarjeta perfecta para ti</small>
+          </h2>
+          <p>
+            Descubre nuestras tarjetas de crédito y débito, diseñadas para ofrecerte seguridad, beneficios y control total de tus finanzas. Sin cuota de manejo y con recompensas en cada compra.
+          </p>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagen/tarjeta-classic.png" class="card-img-top" alt="Tarjeta Classic NovaTrust"/>
+                <div class="card-body">
+                  <h5 class="card-title">Tarjeta Classic</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Débito</h6>
+                  <p class="card-text">
+                    Controla tus gastos y realiza compras en línea y comercios físicos. Sin cuota de manejo.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button class="btn btn-primary w-100">Solicitar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagen/tarjeta-gold.png" class="card-img-top" alt="Tarjeta Gold NovaTrust"/>
+                <div class="card-body">
+                  <h5 class="card-title">Tarjeta Gold</h5>
+                  <h6 class="card-subtitle mb-2 text-warning">Crédito</h6>
+                  <p class="card-text">
+                    Acumula puntos por cada compra y accede a promociones exclusivas. Aprobación inmediata.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button class="btn btn-warning text-white w-100">Solicitar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="imagen/tarjeta-black.png" class="card-img-top" alt="Tarjeta Black NovaTrust"/>
+                <div class="card-body">
+                  <h5 class="card-title">Tarjeta Black</h5>
+                  <h6 class="card-subtitle mb-2 text-dark">Crédito Premium</h6>
+                  <p class="card-text">
+                    Beneficios exclusivos, seguros internacionales y acceso a salas VIP en aeropuertos.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                  <button class="btn btn-dark w-100">Solicitar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-info mt-4 d-flex align-items-center" role="alert">
+            <i class="bi bi-info-circle me-2"></i>
+            Todas nuestras tarjetas cuentan con tecnología contactless y protección antifraude.
+          </div>
+        </div>
+      </div>
+      <!-- Panel lateral -->
+      <div class="col-lg-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Accesos Directos</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="mi-cuenta.html" class="text-decoration-none">
+                  <i class="bi bi-person"></i> Entrar a mi cuenta
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="transacciones.html" class="text-decoration-none">
+                  <i class="bi bi-list-ul"></i> Resumen de transacciones
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="mis-tarjetas.html" class="text-decoration-none">
+                  <i class="bi bi-credit-card"></i> Mis tarjetas
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      NovaTrust S.A.S. © 2025 | contacto@novatrust.com | Bogotá, Colombia
+    </div>
+  </footer>
+  <!-- Bootstrap JS Bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</body>
+</html>
